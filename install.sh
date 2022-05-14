@@ -6,7 +6,7 @@ echo WORKDIR="$PWD" >> ./config.sh
 
 sudo apt -y install libio-socket-ssl-perl libnet-ssleay-perl sendemail
 
-chmod u+x ./*.sh; chmod go-rwx ./config.sh
+chmod ugo+x ./*.sh; chmod go-rwx ./config.sh
 
 { crontab -l; \
 echo \
