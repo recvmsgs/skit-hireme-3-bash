@@ -1,0 +1,5 @@
+SKIT_ALERT_EMAIL='recvmsgs@gmail.com'
+MAIL_FROM='skit.alerts@gmail.com'
+MAIL_PASS='nepoviemHesl0'
+SMTP_ADDR='smtp.gmail.com'
+SMTP_PORT='587'
