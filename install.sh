@@ -2,11 +2,11 @@
 
 WORKDIR="$PWD"
 
-echo WORKDIR="$PWD" >> ./config.sh
+echo WORKDIR="$WORKDIR" >> ./config.sh
 
 sudo apt -y install libio-socket-ssl-perl libnet-ssleay-perl sendemail
 
-chmod u+x ./config.sh ./install.sh ./status.sh; chmod go-rwx ./config.sh
+chmod u+x ./install.sh ./status.sh; chmod go-rwx ./config.sh
 
 { crontab -l | sed -e '/\/status.sh/d' -e '/mon wkday /d'; \
 echo \
