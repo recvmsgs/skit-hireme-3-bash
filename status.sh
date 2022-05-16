@@ -2,8 +2,10 @@
 
 {
 [[ -z "$SKIT_ALERT_EMAIL" || -z "$MAIL_FROM" || -z "$MAIL_PASS" \
-    || -z "$SMTP_ADDR" || -z "$SMTP_PORT" ]] \
+|| -z "$SMTP_ADDR" || -z "$SMTP_PORT" ]] \
     && source ./config.sh
+
+eval "$@"
 
 cd "$WORKDIR"
 echo "$PWD" "$SKIT_ALERT_EMAIL"
