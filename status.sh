@@ -1,14 +1,16 @@
 #!/bin/bash -xv
 
 {
-[[ -z "${SKIT_ALERT_EMAIL}" ]] && source ./config.sh
+[[ -z "$SKIT_ALERT_EMAIL" || -z "$MAIL_FROM" || -z "$MAIL_PASS" \
+    || -z "$SMTP_ADDR" || -z "$SMTP_PORT" ]] \
+    && source ./config.sh
 
 cd "$WORKDIR"
 echo "$PWD" "$SKIT_ALERT_EMAIL"
 
 URL='https://status.digitalocean.com/api/v2/summary.json'
 
-[[ "$1" = 'test' ]] && URL='https://status.digitalocean.com/api/v2/scheduled-maintenances.json'
+[[ ! -z "${DO_TEST}" ]] && URL='https://status.digitalocean.com/api/v2/scheduled-maintenances.json'
 
 RESPONSE="$(curl -s $URL)"
 
