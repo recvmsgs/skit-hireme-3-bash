@@ -1,7 +1,7 @@
 #!/bin/bash -x
 
 WORKDIR="$PWD"
-
+sed -i '/^WORKDIR=/d' ./config.sh
 echo WORKDIR="$WORKDIR" >> ./config.sh
 
 sudo apt -y install libio-socket-ssl-perl libnet-ssleay-perl sendemail
