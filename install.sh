@@ -4,6 +4,8 @@ WORKDIR="$PWD"
 sed -i '/^WORKDIR=/d' ./config.sh
 echo WORKDIR="$WORKDIR" >> ./config.sh
 
+echo "$@" | tr ' ' '\n' >> ./config.sh
+
 sudo apt -y install libio-socket-ssl-perl libnet-ssleay-perl sendemail
 
 chmod u+x ./install.sh ./status.sh; chmod go-rwx ./config.sh
@@ -14,4 +16,4 @@ echo \
    0 */1  *    *     *    '"$WORKDIR"'/status.sh' ; } \
  | crontab - ;
  crontab -l
- 
+
