@@ -21,7 +21,7 @@ USAGE:
 (Env vars are optional)  
   
 - With cmdline params:  
-`./status.sh SKIT_ALERT_EMAIL='recvmsgs@gmail.com' MAIL_FROM='skit.alerts@gmail.com' MAIL_PASS='nepoviemHesl0' SMTP_ADDR='smtp.gmail.com' SMTP_PORT='587'`  
+`./status.sh SKIT_ALERT_EMAIL='recvmsgs@gmail.com' MAIL_FROM='skit.alerts@gmail.com' MAIL_PASS='nepoviemHesl0' SMTP_ADDR='smtp.gmail.com' SMTP_PORT='587' DO_TEST=1`  
 (`DO_TEST=1` works as above.)  
 (Cmdline params optional.)  
   
