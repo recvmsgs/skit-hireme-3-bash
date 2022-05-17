@@ -33,9 +33,9 @@ COMMANDLINE-PARAMETERS override ENVIRONMENT-VARIABLES which override CONFIG-FILE
 
 PARAMETERS:  
 
-`SKIT_ALERT_EMAIL` - destination e-mail address;
-`MAIL_FROM` - sender e-mail address
-`MAIL_PASS` - password
-`SMTP_ADDR` - SMTP server address
-`SMTP_PORT` - SMTP server port
+`SKIT_ALERT_EMAIL` - destination e-mail address;  
+`MAIL_FROM` - sender e-mail address;  
+`MAIL_PASS` - password;  
+`SMTP_ADDR` - SMTP server address;  
+`SMTP_PORT` - SMTP server port.  
 
