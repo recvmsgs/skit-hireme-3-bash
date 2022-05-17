@@ -28,6 +28,6 @@ USAGE:
   
 PRIORITY:  
   
-<Commandline-params> override <Env-vars> which override <config-file>.  
+Commandline-params override Env-vars which override config-file.  
 
 
